@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Poppins", Arial, sans-serif;
+  background: #fff;
+  color: #181818;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body.dark {
+  background: #18181b;
+  color: #f4f4f4;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}

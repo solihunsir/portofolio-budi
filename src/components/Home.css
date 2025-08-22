@@ -1,0 +1,136 @@
+.home {
+  padding: 2rem 3rem;
+  padding-top: 4rem; /* Tambahkan padding atas untuk kompensasi navbar sticky */
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px); /* Minimal tinggi viewport minus navbar */
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hand-icon {
+  font-size: 1.8rem;
+  color: #22c55e;
+}
+
+.headline h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.headline .highlight {
+  color: #22c55e;
+}
+
+.description {
+  max-width: 650px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #22c55e;
+}
+
+.arrow {
+  font-size: 1rem;
+}
+
+.button-cta {
+  background: transparent;
+  border: 2px solid #e5e5e5;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button-cta:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+}
+
+/* Dark mode styles */
+body.dark .greeting {
+  color: #e5e5e5;
+}
+
+body.dark .description p {
+  color: #bbbbbb;
+}
+
+body.dark .social-link {
+  color: #dddddd;
+}
+
+body.dark .button-cta {
+  border-color: #444;
+  color: #e5e5e5;
+}
+
+body.dark .button-cta:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+
+  .headline h1 {
+    font-size: 3rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

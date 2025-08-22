@@ -1,0 +1,238 @@
+.contact {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  transition: filter 0.3s ease;
+}
+
+/* Efek blur pada seluruh konten ketika form difokuskan */
+.contact.form-focused .contact-content > *:not(.contact-form) {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+/* Efek fokus khusus untuk form ketika difokuskan */
+.contact.form-focused .contact-form {
+  position: relative;
+  z-index: 10;
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.tag-icon {
+  color: #22c55e;
+  font-size: 1.4rem;
+}
+
+.contact-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.contact-content {
+  display: flex;
+  gap: 4rem;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Styling untuk form input saat fokus */
+.form-input:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+/* Tambahan styling untuk form saat fokus */
+.contact.form-focused .form-input:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: transparent;
+  border: 2px solid #222;
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+}
+
+.contact-info {
+  flex: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.profile-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-message {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  color: #222;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #22c55e;
+}
+
+/* Dark mode styles */
+body.dark .contact-info {
+  background: #222;
+}
+
+body.dark .form-input {
+  border-color: #444;
+  color: #e5e5e5;
+}
+
+body.dark .submit-btn {
+  border-color: #e5e5e5;
+  color: #e5e5e5;
+}
+
+body.dark .submit-btn:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #111;
+}
+
+body.dark .contact-message {
+  color: #bbbbbb;
+}
+
+body.dark .social-icon {
+  color: #e5e5e5;
+}
+
+/* Dark mode styling untuk form fokus */
+body.dark .contact.form-focused .contact-content > *:not(.contact-form) {
+  filter: blur(3px) brightness(0.7);
+}
+
+body.dark .contact.form-focused .contact-form {
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+body.dark .contact.form-focused .form-input:focus {
+  background-color: rgba(40, 40, 40, 0.6);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

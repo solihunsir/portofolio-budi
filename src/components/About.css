@@ -1,0 +1,156 @@
+.about {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  gap: 4rem;
+}
+
+.about-left {
+  position: relative;
+  flex: 1;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.talk-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.talk-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-icon {
+  font-size: 1.5rem;
+}
+
+.talk-text {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.about-title .highlight {
+  color: #22c55e;
+}
+
+.about-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 2px solid #222;
+  border-radius: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.resume-button:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+}
+
+/* Dark mode styles */
+body.dark .about-description {
+  color: #bbbbbb;
+}
+
+body.dark .resume-button {
+  border-color: #e5e5e5;
+  color: #e5e5e5;
+}
+
+body.dark .resume-button:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #111;
+}
+
+body.dark .talk-circle {
+  background: #222;
+  color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+}
