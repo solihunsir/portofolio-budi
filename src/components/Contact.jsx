@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./Contact.css";
+import profileImage from "../assets/conixx.jpg";
 
 const Contact = () => {
   const [isFocused, setIsFocused] = useState(false);
@@ -54,7 +55,7 @@ const Contact = () => {
 
         <div className="contact-content">
           <motion.form
-            action="https://formsubmit.co/solihun.bks2019@gmail.com"
+            action="https://formsubmit.co/m.budisyah@gmail.com"
             method="POST"
             className="contact-form"
             initial={{ opacity: 0, x: -30 }}
@@ -151,7 +152,7 @@ const Contact = () => {
 
             <div className="profile-image-container">
               <img
-                src="https://placehold.co/300x300"
+                src={profileImage}
                 alt="Profile"
                 className="profile-thumbnail"
               />
@@ -165,7 +166,7 @@ const Contact = () => {
 
             <div className="social-icons">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-budi-s"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
@@ -228,7 +229,7 @@ const Contact = () => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a href="mailto:your.email@example.com" className="social-icon">
+              <a href="m.budisyah@gmail.com" className="social-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

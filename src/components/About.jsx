@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./About.css";
-import profileImage from "../assets/conixx.jpg";
+import profileImage from "../assets/profile.jfif";
 const About = () => {
   return (
     <section id="about" className="about">
@@ -63,7 +63,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.7, duration: 0.5 }}
             >
-              creative developer
+              Business Intelligence Developer
             </motion.span>
             <br />
             <motion.span
@@ -72,7 +72,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.9, duration: 0.5 }}
             >
-              & digital designer
+              & End-to-End Visualization
             </motion.span>
           </motion.h2>
 
@@ -83,13 +83,14 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 1.1, duration: 0.5 }}
           >
-            I collaborate with brands globally to design impactful,
-            mission-focused websites that drive results and achieve business
+            I collaborate with accross functional Teams to design impactful,
+            mission-focused on Data that drive results and achieve business
             goals.
           </motion.p>
 
           <motion.a
-            href="/resume.pdf"
+            href="https://bit.ly/myresumembs"
+            target="_blank"
             className="resume-button"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

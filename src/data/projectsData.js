@@ -1,3 +1,6 @@
+// import conixxImg from "../assets/conixx.jpg";
+// import projek1Img from "../assets/projek1.jfif";
+// import webImg from "../assets/web.jpg";
 const projectsData = [
   {
     id: 1,

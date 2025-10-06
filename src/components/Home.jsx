@@ -59,7 +59,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              purpose driven
+              driven
             </motion.span>
             <br />
             <motion.span
@@ -91,15 +91,14 @@ const Home = () => {
 
         <motion.div className="description" variants={fadeIn}>
           <p>
-            Data analytics specialist with over five years of experience
-            designing, developing, and maintaining scalable BI solutions across
-            Southeast Asia, Africa, and Australia. Adept at transforming
-            business needs into actionable insights using Power BI, Tableau, and
-            SAP Analytics Cloud. Proven ability to lead cross-functional
-            initiatives, improve system reliability, and drive user adoption
-            through training and documentation. Committed to data integrity,
-            continuous learning, and enabling smarter decision-making through
-            technology.
+            Data Analytics and Business Intelligence Specialist with over 5
+            years of experience delivering end-to-end BI solutions across
+            Southeast Asia, Africa, and Australia. Proven track record in Power
+            BI, Tableau and SAP Analytics Cloud focusing on dashboard
+            automation, data governance, UAT, and cross-functional
+            collaboration. Skilled at leading global rollouts, implementing
+            row-level security, optimizing data pipelines, and conducting user
+            training to improve adoption and decision-making efficiency.
           </p>
         </motion.div>
 
