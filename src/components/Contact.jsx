@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./Contact.css";
-import profileImage from "../assets/conixx.jpg";
+import profileImage from "../assets/profile.jfif";
 
 const Contact = () => {
   const [isFocused, setIsFocused] = useState(false);
